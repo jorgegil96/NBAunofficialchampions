@@ -143,7 +143,7 @@ $cont = 0;
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                    <label>2014/15 Title Games</label>
+                    <label>Last 15 Title Games</label>
                     </div>
                     <table class="table">
                         <thead>
@@ -162,39 +162,43 @@ $cont = 0;
                         while (($line =  fgetcsv($file)) !== FALSE) {
                             if ($line > 2) {
                                 if ($line[2] == $holder OR $line[4] == $holder) {
+                                    $titlegames[] = $line;
                                     $cont++;
-                                    if ($line[3] > $line[5]) {
-                                        $holder = $line[2];
-                                    }
-                                    else {
-                                        $holder = $line[4];
-                                    }
-                                    ?>
-                                    <tr>
-                                        <th><?php echo $cont;?></th>
-                                        <td><?php echo $line[0]?></td>
-                                        <td><?php echo $line[4]." (".$teams[$line[4]].")"?></td>
-                                        <td><?php echo $line[5]?></td>
-                                        <td><?php echo $line[2]." (".$teams[$line[2]].")"?></td>
-                                        <td><?php echo $line[3]?></td>
-                                        <td><?php echo $holder?></td>
-                                    </tr>
-                                    <?php
                                 }
                             }
                         }
+                        fclose($file);
+                        for ($i = 0; $i < 15; $i++) {
+                             if ($titlegames[$cont - $i - 1][3] > $titlegames[$cont - $i - 1][5]) {
+                                        $holder = $titlegames[$cont - $i - 1][2];
+                                    }
+                                    else {
+                                        $holder = $titlegames[$cont - $i - 1][4];
+                                    }
+                                    ?>
+                                    <tr>
+                                        <th><?php echo $cont - $i + 1;?></th>
+                                        <td><?php echo $titlegames[$cont - $i - 1][0]?></td>
+                                        <td><?php echo $titlegames[$cont - $i - 1][4]." (".$teams[$titlegames[$cont - $i - 1][4]].")"?></td>
+                                        <td><?php echo $titlegames[$cont - $i - 1][5]?></td>
+                                        <td><?php echo $titlegames[$cont - $i - 1][2]." (".$teams[$titlegames[$cont - $i - 1][2]].")"?></td>
+                                        <td><?php echo $titlegames[$cont - $i - 1][3]?></td>
+                                        <td><?php echo $holder?></td>
+                                    </tr>
+                                    <?php
+                        }
                         ?>
+
                         </tbody>
                     </table>
                 </div>
                 <?php
-                fclose($file);
                 ?>
             </div>
         </div>
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-a">
 
         <div class="container">
 
@@ -202,11 +206,16 @@ $cont = 0;
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Rules</h2>
+                    <ul>
+                        <li>The first team to win an official match since the ABA foundation (1946) were declared the first ever Unofficial NBA Champions. 
+                        This were the New York Knicks after a 86-66 win over the Toronto Huskies on November 1st, 1946.</li>
+                        <li>The next official match involving the title holder is considered a title match, with the winner taking the title.</li>
+                        <li>Official matches must me regular season or playoff games, no pre-season.</li>
+                    </ul>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <img class="img-responsive img-round" src="img/other/joey.jpg" alt="">
                 </div>
             </div>
 
@@ -216,7 +225,7 @@ $cont = 0;
     </div>
     <!-- /.content-section-b -->
 
-    <div class="content-section-a">
+    <div class="content-section-b">
 
         <div class="container">
 

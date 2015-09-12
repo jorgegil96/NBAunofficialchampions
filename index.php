@@ -8,7 +8,7 @@ if ($season < 1950) {
 	$file = fopen("data/leagues_NBA_".$season."_games_games.csv", "r");
 }
 
-$holder = "New York Knicks";
+$holder = "San Antonio Spurs";
 $cont = 0;
 ?>
 
