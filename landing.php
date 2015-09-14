@@ -83,7 +83,7 @@ $cont = 0;
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>NBA Unofficial Champs</h1>
-                        <h3>NBA Championship Belt</h3>
+                        <h3>Tracking the belt holder all the way back to 1946</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -143,7 +143,7 @@ $cont = 0;
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                    <label>Last 15 Title Games</label>
+                    <label>Last 15 Title Games Log</label>
                     </div>
                     <table class="table">
                         <thead>
@@ -155,6 +155,7 @@ $cont = 0;
                                 <th>Away</th>
                                 <th>PTS</th>
                                 <th>Winner</th>
+                                <th>Streak</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -169,23 +170,43 @@ $cont = 0;
                         }
                         fclose($file);
                         for ($i = 0; $i < 15; $i++) {
-                             if ($titlegames[$cont - $i - 1][3] > $titlegames[$cont - $i - 1][5]) {
-                                        $holder = $titlegames[$cont - $i - 1][2];
-                                    }
-                                    else {
-                                        $holder = $titlegames[$cont - $i - 1][4];
-                                    }
-                                    ?>
-                                    <tr>
-                                        <th><?php echo $cont - $i + 1;?></th>
-                                        <td><?php echo $titlegames[$cont - $i - 1][0]?></td>
-                                        <td><?php echo $titlegames[$cont - $i - 1][4]." (".$teams[$titlegames[$cont - $i - 1][4]].")"?></td>
-                                        <td><?php echo $titlegames[$cont - $i - 1][5]?></td>
-                                        <td><?php echo $titlegames[$cont - $i - 1][2]." (".$teams[$titlegames[$cont - $i - 1][2]].")"?></td>
-                                        <td><?php echo $titlegames[$cont - $i - 1][3]?></td>
-                                        <td><?php echo $holder?></td>
-                                    </tr>
-                                    <?php
+                            $streak = 1;
+                            if ($titlegames[$cont - $i - 1][3] > $titlegames[$cont - $i - 1][5]) {
+                                $holder = $titlegames[$cont - $i - 1][2];
+                            }
+                            else {
+                                $holder = $titlegames[$cont - $i - 1][4];
+                            }
+
+                            $aux = 1;
+                            $tempholder = $holder;
+                            while ($holder == $tempholder && ($i - 1 - $aux) < $cont) {
+
+                                if ($titlegames[$cont - $i - 1 - $aux][3] > $titlegames[$cont - $i - 1 - $aux][5]) {
+                                    $tempholder = $titlegames[$cont - $i - 1 - $aux][2];
+                                }
+                                else {
+                                    $tempholder = $titlegames[$cont - $i - 1 - $aux][4];
+                                }
+                                $aux++;
+
+                                if ($holder == $tempholder) {
+                                    $streak++;
+                                }
+                            }
+
+                            ?>
+                            <tr>
+                                <th><?php echo $cont - $i + 1;?></th>
+                                <td><?php echo $titlegames[$cont - $i - 1][0]?></td>
+                                <td><?php echo $titlegames[$cont - $i - 1][4]." (".$teams[$titlegames[$cont - $i - 1][4]].")"?></td>
+                                <td><?php echo $titlegames[$cont - $i - 1][5]?></td>
+                                <td><?php echo $titlegames[$cont - $i - 1][2]." (".$teams[$titlegames[$cont - $i - 1][2]].")"?></td>
+                                <td><?php echo $titlegames[$cont - $i - 1][3]?></td>
+                                <td><?php echo "<img class='small-logo' src='http://i.cdn.turner.com/nba/nba/.element/img/1.0/logos/teamlogos_80x64/".$teams[$holder].".gif'>".$holder ?></td>
+                                <td><?php echo $streak ?></td>
+                            </tr>
+                            <?php
                         }
                         ?>
 
@@ -209,7 +230,7 @@ $cont = 0;
                     <h2 class="section-heading">Rules</h2>
                     <ul>
                         <li>The first team to win an official match since the ABA foundation (1946) were declared the first ever Unofficial NBA Champions. 
-                        This were the New York Knicks after a 86-66 win over the Toronto Huskies on November 1st, 1946.</li>
+                        This were the New York Knicks after a 68-66 win over the Toronto Huskies on November 1st, 1946.</li>
                         <li>The next official match involving the title holder is considered a title match, with the winner taking the title.</li>
                         <li>Official matches must me regular season or playoff games, no pre-season.</li>
                     </ul>
@@ -233,11 +254,12 @@ $cont = 0;
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <h2 class="section-heading">2014/15 Season Stats</h2>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">All Time Stats</h2>
                 </div>
             </div>
 

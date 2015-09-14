@@ -172,3 +172,10 @@ p.copyright {
 .img-round {
     border-radius: 100%;
 }
+
+.small-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    padding-right: 3px;
+}
