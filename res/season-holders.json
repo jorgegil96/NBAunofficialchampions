@@ -1,0 +1,8 @@
+[
+	{"season": 2015, "type":"regular", "holder":"New Orleans Pelicans"},
+	{"season": 2015, "type":"playoffs", "holder":"Golden State Warriors"},
+	{"season": 2014, "type":"regular", "holder":"NOP"},
+	{"season": 2014, "type":"playoffs", "holder":"San Antonio Spurs"},
+	{"season": 2013, "type":"regular", "holder":"NOP"},
+	{"season": 2013, "type":"playoffs", "holder":"NOP"}
+]

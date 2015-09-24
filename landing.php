@@ -1,11 +1,116 @@
 <?php
 include ("res/TeamNames.php");
+$string = file_get_contents("res/season-holders.json");
+$json_a = json_decode($string, true);
+
+echo "<br>treu<br>aaa<br>";
+echo $string;
+echo "<br>";
 
 $season = 2015;
-$file = fopen("data/leagues_NBA_".$season."_games_games.csv", "r");
+if (file_exists("data/leagues_NBA_".$season."_games_games_playoffs.csv")) {
+    $playoffs_file = "data/leagues_NBA_".$season."_games_games_playoffs.csv";
+    $playoffs_games = file($playoffs_file, FILE_SKIP_EMPTY_LINES);
+    echo "<br>treu<br>";
+    echo count($playoffs_games);
+    if (count($playoffs_games) < 17) {
+        $regular_file = "data/leagues_NBA_".$season."_games_games.csv";
+        $regular_games = file($regular_file, FILE_SKIP_EMPTY_LINES);
 
-$holder = "San Antonio Spurs";
+        $type = "playoffs";
+        $season--;
+    } else {
+        $type = "regular";
+    }
+} else {
+    $regular_file = "data/leagues_NBA_".$season."_games_games.csv";
+    $regular_games = file($regular_file, FILE_SKIP_EMPTY_LINES);
+    echo "<br>COUNT = ".count($regular_games)."<br>";
+    if (count($regular_games) < 17) {
+        $playoffs_file = "data/leagues_NBA_".($season - 1)."_games_games_playoffs.csv";
+        $playoffs_games = file($playoffs_file);
+
+        $type = "regular";
+        $season--;
+    } else {
+        $type = "playoffs";
+        $season--;
+    }
+}
+
+echo "<br>".$season." @ ".$type."<br>";
+
+for ($i = 0; $i < 6; $i++) {
+    echo $json_a[$i]["season"]." | ".$json_a[$i]["type"]." | ".$json_a[$i]["holder"];
+    if ($json_a[$i]["season"] == $season && $json_a[$i]["type"] == $type) {
+        $original_holder = $json_a[$i]["holder"];
+        break;
+    }
+}
+
+
+
+
+echo "<br>".$original_holder;
+
+$holder = $original_holder;
+
+//2014 @ playoffs SAS
+//2015 @ regular NOP
+//playoffs -> last complete was next regular season
+//regular -> last complete was next playoffs
+if ($type == "playoffs") {
+    $season++;
+    $loc = "data/leagues_NBA_".$season."_games_games.csv";
+} else {
+    $loc = "data/leagues_NBA_".$season."_games_games_playoffs.csv";
+}
+
+$file = fopen($loc, "r");
 $cont = 0;
+while (($line = fgetcsv($file)) !== FALSE) {
+        if ($cont > 1) {
+            if ($line[2] == $holder OR $line[4] == $holder) {
+                $cont2++;
+                $titlegames[] = $line;
+                if ($line[3] > $line[5]) {
+                    $holder = $line[2];
+                }
+                else {
+                    $holder = $line[4];
+                }
+            }
+        }
+        $cont++;
+}
+$cont = $cont2;
+fclose($file);
+
+if ($titlegames[$cont - 1][3] > $titlegames[$cont - 1][5]) {
+    $champ = $titlegames[$cont - 1][2];
+} else {
+    $champ = $titlegames[$cont - 1][4];
+}
+
+$string = file_get_contents("res/teamstreaks.json");
+$json_b = json_decode($string, true);
+for ($i = 0; $i < 1; $i++) {
+    if ($json_b[$i]["id"] == $teams[$champ]) {
+        $current_streak = $json_b[$i]["current_streak"];
+        $season_streak = $json_b[$i]["season_streak"];
+        $alltime_streak = $json_b[$i]["alltime_streak"];
+        $wins = $json_b[$i]["wins"];
+        $losses = $json_b[$i]["losses"];
+        $total_games = $wins + $losses;
+        if ($total_games == 0) {
+            $per = 0;
+        } else {
+            $per = ($wins * 100) / $total_games;
+        }
+        break;
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +145,7 @@ $cont = 0;
 </head>
 
 <body>
+<br>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -116,16 +222,16 @@ $cont = 0;
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Current Belt Holder:<br>Golden State Warriors</h2>
+                    <h2 class="section-heading">Current Belt Holder:<br><?php echo $champ; ?></h2>
                     <br>
-                    <h4>Current Streak: <b>8</b></h4>
-                    <h4>Longest Streak this season: <b>9</b></h4>
-                    <h4>Longest Streak all time: <b>25</b></h4>
+                    <h4>Current Streak: <b><?php echo $current_streak; ?></b></h4>
+                    <h4>Longest Streak this season: <b><?php echo $season_streak; ?></b></h4>
+                    <h4>Longest Streak all time: <b><?php echo $alltime_streak; ?></b></h4>
                     <br>
-                    <h4>Title games this season: 20</h4>
-                    <h4>Wins: 15</h4>
-                    <h4>Losses: 5</h4>
-                    <h4>Win %: 75%</h4>
+                    <h4>Title games this season: <?php echo $total_games; ?></h4>
+                    <h4>Wins: <?php echo $wins; ?></h4>
+                    <h4>Losses: <?php echo $losses; ?></h4>
+                    <h4>Win %: <?php echo $per; ?></h4>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/logos/gsw.png" alt="">
@@ -148,7 +254,6 @@ $cont = 0;
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Date</th>
                                 <th>Home</th>
                                 <th>PTS</th>
@@ -160,15 +265,7 @@ $cont = 0;
                         </thead>
                         <tbody>
                         <?php
-                        while (($line =  fgetcsv($file)) !== FALSE) {
-                            if ($line > 2) {
-                                if ($line[2] == $holder OR $line[4] == $holder) {
-                                    $titlegames[] = $line;
-                                    $cont++;
-                                }
-                            }
-                        }
-                        fclose($file);
+                        
                         for ($i = 0; $i < 15; $i++) {
                             $streak = 1;
                             if ($titlegames[$cont - $i - 1][3] > $titlegames[$cont - $i - 1][5]) {
@@ -197,7 +294,6 @@ $cont = 0;
 
                             ?>
                             <tr>
-                                <th><?php echo $cont - $i + 1;?></th>
                                 <td><?php echo $titlegames[$cont - $i - 1][0]?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][4]." (".$teams[$titlegames[$cont - $i - 1][4]].")"?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][5]?></td>

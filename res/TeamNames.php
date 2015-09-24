@@ -14,7 +14,6 @@
         'Memphis Grizzlies' => 'MEM',
         'Los Angeles Clippers' => 'LAC',
         'San Antonio Spurs' => 'SAS',
-        'New Orleans Hornets' => 'NOH',
         'Denver Nuggets' => 'DEN',
         'Philadelphia 76ers' => 'PHI',
         'Golden State Warriors' => 'GSW',
@@ -31,10 +30,11 @@
         'New York Knicks' => 'NYK',
         'Orlando Magic' => 'ORL',
         'Brooklyn Nets' => 'BKN',
+        'New Orleans Pelicans' => 'NOP',
 
         // Defunct Franchises
         'New Jersey Nets' => 'NJN',
-        'New Orleans Pelicans' => 'NOP',
+        'New Orleans Hornets' => 'NOH',
         'New Orleans/Oklahoma City Hornets' => 'NOK',
         'Seattle SuperSonics' => 'SEA',
         'Vancouver Grizzlies' => 'VAN',
