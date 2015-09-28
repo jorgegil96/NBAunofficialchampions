@@ -5,8 +5,8 @@
     "alltime_streak": 11,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 322,
+    "losses_alltime": 367
 }, {
     "id": "BOS",
     "current_streak": 0,
@@ -14,134 +14,134 @@
     "alltime_streak": 17,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 820,
+    "losses_alltime": 473
 }, {
     "id": "BKN",
     "current_streak": 0,
     "season_streak": 2,
     "alltime_streak": 8,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 2,
+    "losses_season": 1,
+    "wins_alltime": 92,
+    "losses_alltime": 133
 }, {
     "id": "CHA",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 3,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 2,
+    "wins_alltime": 34,
+    "losses_alltime": 77
 }, {
     "id": "CHI",
     "current_streak": 0,
     "season_streak": 3,
     "alltime_streak": 13,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 4,
+    "losses_season": 5,
+    "wins_alltime": 242,
+    "losses_alltime": 241
 }, {
     "id": "CLE",
     "current_streak": 0,
     "season_streak": 11,
     "alltime_streak": 11,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 16,
+    "losses_season": 7,
+    "wins_alltime": 170,
+    "losses_alltime": 172
 }, {
     "id": "DAL",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 6,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 2,
+    "wins_alltime": 84,
+    "losses_alltime": 116
 }, {
     "id": "DEN",
     "current_streak": 0,
     "season_streak": 3,
     "alltime_streak": 9,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 5,
+    "losses_season": 5,
+    "wins_alltime": 103,
+    "losses_alltime": 127
 }, {
     "id": "DET",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 10,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 3,
+    "wins_alltime": 293,
+    "losses_alltime": 374
 }, {
     "id": "GSW",
     "current_streak": 3,
     "season_streak": 6,
     "alltime_streak": 8,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 18,
+    "losses_season": 8,
+    "wins_alltime": 273,
+    "losses_alltime": 355
 }, {
     "id": "HOU",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 11,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 1,
+    "losses_season": 6,
+    "wins_alltime": 188,
+    "losses_alltime": 212
 }, {
     "id": "IND",
     "current_streak": 0,
     "season_streak": 2,
     "alltime_streak": 10,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 2,
+    "losses_season": 3,
+    "wins_alltime": 136,
+    "losses_alltime": 167
 }, {
     "id": "LAC",
     "current_streak": 0,
     "season_streak": 2,
     "alltime_streak": 8,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 4,
+    "losses_season": 4,
+    "wins_alltime": 95,
+    "losses_alltime": 137
 }, {
     "id": "LAL",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 18,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 1,
+    "losses_season": 5,
+    "wins_alltime": 597,
+    "losses_alltime": 409
 }, {
     "id": "MEM",
     "current_streak": 0,
     "season_streak": 2,
     "alltime_streak": 4,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 3,
+    "losses_season": 6,
+    "wins_alltime": 34,
+    "losses_alltime": 62
 }, {
     "id": "MIA",
     "current_streak": 0,
     "season_streak": 3,
     "alltime_streak": 8,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 4,
+    "losses_season": 3,
+    "wins_alltime": 144,
+    "losses_alltime": 105
 }, {
     "id": "MIL",
     "current_streak": 0,
@@ -149,116 +149,116 @@
     "alltime_streak": 15,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 252,
+    "losses_alltime": 204
 }, {
     "id": "MIN",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 6,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 1,
+    "losses_season": 2,
+    "wins_alltime": 39,
+    "losses_alltime": 74
 }, {
     "id": "NOP",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 9,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 2,
+    "losses_season": 6,
+    "wins_alltime": 30,
+    "losses_alltime": 45
 }, {
     "id": "NYK",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 12,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 2,
+    "wins_alltime": 387,
+    "losses_alltime": 407
 }, {
     "id": "OKC",
     "current_streak": 0,
     "season_streak": 3,
     "alltime_streak": 9,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 5,
+    "losses_season": 4,
+    "wins_alltime": 178,
+    "losses_alltime": 169
 }, {
     "id": "ORL",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 8,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 4,
+    "wins_alltime": 69,
+    "losses_alltime": 100
 }, {
     "id": "PHI",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 11,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 1,
+    "wins_alltime": 420,
+    "losses_alltime": 395
 }, {
     "id": "PHX",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 10,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 1,
+    "losses_season": 4,
+    "wins_alltime": 159,
+    "losses_alltime": 175
 }, {
     "id": "POR",
     "current_streak": 0,
     "season_streak": 4,
     "alltime_streak": 8,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 9,
+    "losses_season": 5,
+    "wins_alltime": 124,
+    "losses_alltime": 153
 }, {
     "id": "SAC",
     "current_streak": 0,
     "season_streak": 1,
     "alltime_streak": 12,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 2,
+    "losses_season": 7,
+    "wins_alltime": 314,
+    "losses_alltime": 362
 }, {
     "id": "SAS",
     "current_streak": 0,
     "season_streak": 11,
     "alltime_streak": 13,
-    "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_season": 22,
+    "losses_season": 4,
+    "wins_alltime": 238,
+    "losses_alltime": 145
 }, {
     "id": "TOR",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 3,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 1,
+    "wins_alltime": 24,
+    "losses_alltime": 44
 }, {
     "id": "UTA",
     "current_streak": 0,
     "season_streak": 0,
     "alltime_streak": 12,
     "wins_season": 0,
-    "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_season": 2,
+    "wins_alltime": 186,
+    "losses_alltime": 147
 }, {
     "id": "WAS",
     "current_streak": 0,
@@ -266,8 +266,8 @@
     "alltime_streak": 13,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 270,
+    "losses_alltime": 319
 }, {
     "id": "AND",
     "current_streak": 0,
@@ -275,8 +275,8 @@
     "alltime_streak": 2,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 2,
+    "losses_alltime": 7
 }, {
     "id": "BLB",
     "current_streak": 0,
@@ -293,8 +293,8 @@
     "alltime_streak": 6,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 44,
+    "losses_alltime": 21
 }, {
     "id": "INO",
     "current_streak": 0,
@@ -302,8 +302,8 @@
     "alltime_streak": 4,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 19,
+    "losses_alltime": 33
 }, {
     "id": "SHE",
     "current_streak": 0,
@@ -311,8 +311,8 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 2,
+    "losses_alltime": 4
 }, {
     "id": "STB",
     "current_streak": 0,
@@ -320,8 +320,8 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 4,
+    "losses_alltime": 20
 }, {
     "id": "WSH",
     "current_streak": 0,
@@ -339,7 +339,7 @@
     "wins_season": 0,
     "losses_season": 0,
     "wins_alltime": 0,
-    "losses_alltime": 0
+    "losses_alltime": 2
 }, {
     "id": "HUS",
     "current_streak": 0,
@@ -347,8 +347,8 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 3,
+    "losses_alltime": 6
 }, {
     "id": "PRO",
     "current_streak": 0,
@@ -356,8 +356,8 @@
     "alltime_streak": 2,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 6,
+    "losses_alltime": 25
 }, {
     "id": "PIT",
     "current_streak": 0,
@@ -365,8 +365,8 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 2,
+    "losses_alltime": 10
 }, {
     "id": "CLR",
     "current_streak": 0,
@@ -374,8 +374,8 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 1,
+    "losses_alltime": 3
 }, {
     "id": "DEF",
     "current_streak": 1,
@@ -383,8 +383,8 @@
     "alltime_streak": 3,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 7,
+    "losses_alltime": 5
 }, {
     "id": "JET",
     "current_streak": 0,
@@ -392,6 +392,6 @@
     "alltime_streak": 1,
     "wins_season": 0,
     "losses_season": 0,
-    "wins_alltime": 0,
-    "losses_alltime": 0
+    "wins_alltime": 1,
+    "losses_alltime": 6
 }]
