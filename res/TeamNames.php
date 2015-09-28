@@ -92,7 +92,7 @@
         'SAS' => ['San Antonio Spurs'],
         'TOR' => ['Toronto Raptors'],
         'UTA' => ['Utah Jazz', 'New Orleans Jazz'],
-        'WAS' => ['Washington Wizards', 'Washington Bullets', 'Capital Bullets', 'Baltimore Bullets', 'Chicago Zephyrs', 'Chicago Packers'],
+        'WAS' => ['Washington Wizards', 'Washington Bullets', 'Capital Bullets', 'Baltimore Bullets', 'Chicago Zephyrs', 'Chicago Packers', 'Washington Capitols'],
         // ---
         //'SEA' => ['Seattle SuperSonics'],
         //'VAN' => ['Vancouver Grizzlies'],
@@ -109,6 +109,27 @@
         'WSH' => ['Washington Capitols'],
         'WAT' => ['Waterloo Hawks'],
         'HUS' => ['Toronto Huskies'],
+        'PRO' => ['Providence Steam Rollers'],
+        'PIT' => ['Pittsburgh Ironmen'],
+        'CLR' => ['Cleveland Rebels'],
+        'DEF' => ['Detroit Falcons'],
+        'JET' => ['Indianapolis Jets'],
+        'WAT' => ['Waterloo Hawks'],
+
+
+
     ];
+
+    function getFranchise($string, $franchises) {
+        foreach ($franchises as $fra=>$fra_array) {
+            foreach ($fra_array as $name) {
+                if ($name == $string) {
+                    return $fra;
+                }
+            }
+        }
+    }
+
+
 
 ?>
