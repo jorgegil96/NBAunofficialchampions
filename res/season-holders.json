@@ -1,8 +1,561 @@
-[
-	{"season": 2015, "type":"regular", "holder":"New Orleans Pelicans"},
-	{"season": 2015, "type":"playoffs", "holder":"Golden State Warriors"},
-	{"season": 2014, "type":"regular", "holder":"NOP"},
-	{"season": 2014, "type":"playoffs", "holder":"San Antonio Spurs"},
-	{"season": 2013, "type":"regular", "holder":"NOP"},
-	{"season": 2013, "type":"playoffs", "holder":"NOP"}
-]
+[{
+    "season": 1946,
+    "type": "regular",
+    "holder": "New York Knicks"
+}, {
+    "season": 1946,
+    "type": "playoffs",
+    "holder": "New York Knicks"
+}, {
+    "season": 1947,
+    "type": "regular",
+    "holder": "Detroit Falcons"
+}, {
+    "season": 1947,
+    "type": "playoffs",
+    "holder": "Detroit Falcons"
+}, {
+    "season": 1948,
+    "type": "regular",
+    "holder": "Washington Capitols"
+}, {
+    "season": 1948,
+    "type": "playoffs",
+    "holder": "Baltimore Bullets"
+}, {
+    "season": 1949,
+    "type": "regular",
+    "holder": "Chicago Stags"
+}, {
+    "season": 1949,
+    "type": "playoffs",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1950,
+    "type": "regular",
+    "holder": "Indianapolis Olympians"
+}, {
+    "season": 1950,
+    "type": "playoffs",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1951,
+    "type": "regular",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1951,
+    "type": "playoffs",
+    "holder": "Rochester Royals"
+}, {
+    "season": 1952,
+    "type": "regular",
+    "holder": "New York Knicks"
+}, {
+    "season": 1952,
+    "type": "playoffs",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1953,
+    "type": "regular",
+    "holder": "Syracuse Nationals"
+}, {
+    "season": 1953,
+    "type": "playoffs",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1954,
+    "type": "regular",
+    "holder": "Milwaukee Hawks"
+}, {
+    "season": 1954,
+    "type": "playoffs",
+    "holder": "Milwaukee Hawks"
+}, {
+    "season": 1955,
+    "type": "regular",
+    "holder": "Rochester Royals"
+}, {
+    "season": 1956,
+    "type": "playoffs",
+    "holder": "Philadelphia Warriors"
+}, {
+    "season": 1957,
+    "type": "regular",
+    "holder": "Minneapolis Lakers"
+}, {
+    "season": 1957,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1958,
+    "type": "regular",
+    "holder": "Cincinnati Royals"
+}, {
+    "season": 1958,
+    "type": "playoffs",
+    "holder": "St. Louis Hawks"
+}, {
+    "season": 1959,
+    "type": "regular",
+    "holder": "Detroit Pistons"
+}, {
+    "season": 1959,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1960,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1960,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1961,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1961,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1962,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1962,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1963,
+    "type": "regular",
+    "holder": "Cincinnati Royals"
+}, {
+    "season": 1963,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1964,
+    "type": "regular",
+    "holder": "Baltimore Bullets"
+}, {
+    "season": 1964,
+    "type": "playoffs",
+    "holder": "Baltimore Bullets"
+}, {
+    "season": 1965,
+    "type": "regular",
+    "holder": "St. Louis Hawks"
+}, {
+    "season": 1965,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1966,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1966,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1967,
+    "type": "regular",
+    "holder": "Cincinnati Royals"
+}, {
+    "season": 1967,
+    "type": "playoffs",
+    "holder": "Philadelphia 76ers"
+}, {
+    "season": 1968,
+    "type": "regular",
+    "holder": "New York Knicks"
+}, {
+    "season": 1968,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1969,
+    "type": "regular",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1969,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1970,
+    "type": "regular",
+    "holder": "Atlanta Hawks"
+}, {
+    "season": 1970,
+    "type": "playoffs",
+    "holder": "New York Knicks"
+}, {
+    "season": 1971,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1971,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1972,
+    "type": "regular",
+    "holder": "Milwaukee Bucks"
+}, {
+    "season": 1972,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1973,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1973,
+    "type": "playoffs",
+    "holder": "New York Knicks"
+}, {
+    "season": 1974,
+    "type": "regular",
+    "holder": "Seattle SuperSonics"
+}, {
+    "season": 1974,
+    "type": "playoffs",
+    "holder": "Seattle SuperSonics"
+}, {
+    "season": 1975,
+    "type": "regular",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1975,
+    "type": "playoffs",
+    "holder": "Golden State Warriors"
+}, {
+    "season": 1976,
+    "type": "regular",
+    "holder": "Buffalo Braves"
+}, {
+    "season": 1976,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1977,
+    "type": "regular",
+    "holder": "Indiana Pacers"
+}, {
+    "season": 1977,
+    "type": "playoffs",
+    "holder": "Indiana Pacers"
+}, {
+    "season": 1978,
+    "type": "regular",
+    "holder": "Milwaukee Bucks"
+}, {
+    "season": 1978,
+    "type": "playoffs",
+    "holder": "Washington Bullets"
+}, {
+    "season": 1979,
+    "type": "regular",
+    "holder": "San Diego Clippers"
+}, {
+    "season": 1979,
+    "type": "playoffs",
+    "holder": "San Diego Clippers"
+}, {
+    "season": 1980,
+    "type": "regular",
+    "holder": "Philadelphia 76ers"
+}, {
+    "season": 1980,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1981,
+    "type": "regular",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1981,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1982,
+    "type": "regular",
+    "holder": "New Jersey Nets"
+}, {
+    "season": 1982,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1983,
+    "type": "regular",
+    "holder": "Atlanta Hawks"
+}, {
+    "season": 1983,
+    "type": "playoffs",
+    "holder": "Philadelphia 76ers"
+}, {
+    "season": 1984,
+    "type": "regular",
+    "holder": "Atlanta Hawks"
+}, {
+    "season": 1984,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1985,
+    "type": "regular",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1985,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1986,
+    "type": "regular",
+    "holder": "Washington Bullets"
+}, {
+    "season": 1986,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1987,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1987,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1988,
+    "type": "regular",
+    "holder": "New Jersey Nets"
+}, {
+    "season": 1988,
+    "type": "playoffs",
+    "holder": "New Jersey Nets"
+}, {
+    "season": 1989,
+    "type": "regular",
+    "holder": "Miami Heat"
+}, {
+    "season": 1989,
+    "type": "playoffs",
+    "holder": "Miami Heat"
+}, {
+    "season": 1990,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1990,
+    "type": "playoffs",
+    "holder": "Detroit Pistons"
+}, {
+    "season": 1991,
+    "type": "regular",
+    "holder": "Phoenix Suns"
+}, {
+    "season": 1991,
+    "type": "playoffs",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1992,
+    "type": "regular",
+    "holder": "Boston Celtics"
+}, {
+    "season": 1992,
+    "type": "playoffs",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1993,
+    "type": "regular",
+    "holder": "Minnesota Timberwolves"
+}, {
+    "season": 1993,
+    "type": "playoffs",
+    "holder": "Minnesota Timberwolves"
+}, {
+    "season": 1994,
+    "type": "regular",
+    "holder": "Atlanta Hawks"
+}, {
+    "season": 1994,
+    "type": "playoffs",
+    "holder": "Houston Rockets"
+}, {
+    "season": 1995,
+    "type": "regular",
+    "holder": "Utah Jazz"
+}, {
+    "season": 1995,
+    "type": "playoffs",
+    "holder": "Houston Rockets"
+}, {
+    "season": 1996,
+    "type": "regular",
+    "holder": "Orlando Magic"
+}, {
+    "season": 1996,
+    "type": "playoffs",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1997,
+    "type": "regular",
+    "holder": "Portland Trail Blazers"
+}, {
+    "season": 1997,
+    "type": "playoffs",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1998,
+    "type": "regular",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 1998,
+    "type": "playoffs",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 1999,
+    "type": "regular",
+    "holder": "Indiana Pacers"
+}, {
+    "season": 1999,
+    "type": "playoffs",
+    "holder": "San Antonio Spurs"
+}, {
+    "season": 2000,
+    "type": "regular",
+    "holder": "Denver Nuggets"
+}, {
+    "season": 2000,
+    "type": "playoffs",
+    "holder": "Denver Nuggets"
+}, {
+    "season": 2001,
+    "type": "regular",
+    "holder": "Miami Heat"
+}, {
+    "season": 2001,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 2002,
+    "type": "regular",
+    "holder": "Detroit Pistons"
+}, {
+    "season": 2002,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 2003,
+    "type": "regular",
+    "holder": "Los Angeles Clippers"
+}, {
+    "season": 2003,
+    "type": "playoffs",
+    "holder": "Los Angeles Clippers"
+}, {
+    "season": 2004,
+    "type": "regular",
+    "holder": "San Antonio Spurs"
+}, {
+    "season": 2004,
+    "type": "playoffs",
+    "holder": "Detroit Pistons"
+}, {
+    "season": 2005,
+    "type": "regular",
+    "holder": "Houston Rockets"
+}, {
+    "season": 2005,
+    "type": "playoffs",
+    "holder": "San Antonio Spurs"
+}, {
+    "season": 2006,
+    "type": "regular",
+    "holder": "Indiana Pacers"
+}, {
+    "season": 2006,
+    "type": "playoffs",
+    "holder": "Miami Heat"
+}, {
+    "season": 2007,
+    "type": "regular",
+    "holder": "Utah Jazz"
+}, {
+    "season": 2007,
+    "type": "playoffs",
+    "holder": "San Antonio Spurs"
+}, {
+    "season": 2008,
+    "type": "regular",
+    "holder": "Detroit Pistons"
+}, {
+    "season": 2008,
+    "type": "playoffs",
+    "holder": "Boston Celtics"
+}, {
+    "season": 2009,
+    "type": "regular",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 2009,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 2010,
+    "type": "regular",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 2010,
+    "type": "playoffs",
+    "holder": "Los Angeles Lakers"
+}, {
+    "season": 2011,
+    "type": "regular",
+    "holder": "Chicago Bulls"
+}, {
+    "season": 2011,
+    "type": "playoffs",
+    "holder": "Dallas Mavericks"
+}, {
+    "season": 2012,
+    "type": "regular",
+    "holder": "New York Knicks"
+}, {
+    "season": 2012,
+    "type": "playoffs",
+    "holder": "Miami Heat"
+}, {
+    "season": 2013,
+    "type": "regular",
+    "holder": "Los Angeles Clippers"
+}, {
+    "season": 2013,
+    "type": "playoffs",
+    "holder": "Miami Heat"
+}, {
+    "season": 2014,
+    "type": "regular",
+    "holder": "New York Knicks"
+}, {
+    "season": 2014,
+    "type": "playoffs",
+    "holder": "New York Knicks"
+}, {
+    "season": 2015,
+    "type": "regular",
+    "holder": "New Orleans Pelicans"
+}, {
+    "season": 2015,
+    "type": "playoffs",
+    "holder": "Golden State Warriors"
+}, {
+    "season": 2016,
+    "type": "regular",
+    "holder": ""
+}, {
+    "season": 2016,
+    "type": "playoffs",
+    "holder": ""
+}]
