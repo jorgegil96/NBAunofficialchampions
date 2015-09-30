@@ -3,16 +3,10 @@ include ("res/TeamNames.php");
 $string = file_get_contents("res/season-holders.json");
 $json_a = json_decode($string, true);
 
-echo "<br>treu<br>aaa<br>";
-echo $string;
-echo "<br>";
-
 $season = 2015;
 if (file_exists("data/leagues_NBA_".$season."_games_games_playoffs.csv")) {
     $playoffs_file = "data/leagues_NBA_".$season."_games_games_playoffs.csv";
     $playoffs_games = file($playoffs_file, FILE_SKIP_EMPTY_LINES);
-    echo "<br>treu<br>";
-    echo count($playoffs_games);
     if (count($playoffs_games) < 17) {
         $regular_file = "data/leagues_NBA_".$season."_games_games.csv";
         $regular_games = file($regular_file, FILE_SKIP_EMPTY_LINES);
@@ -25,7 +19,6 @@ if (file_exists("data/leagues_NBA_".$season."_games_games_playoffs.csv")) {
 } else {
     $regular_file = "data/leagues_NBA_".$season."_games_games.csv";
     $regular_games = file($regular_file, FILE_SKIP_EMPTY_LINES);
-    echo "<br>COUNT = ".count($regular_games)."<br>";
     if (count($regular_games) < 17) {
         $playoffs_file = "data/leagues_NBA_".($season - 1)."_games_games_playoffs.csv";
         $playoffs_games = file($playoffs_file);
@@ -38,20 +31,12 @@ if (file_exists("data/leagues_NBA_".$season."_games_games_playoffs.csv")) {
     }
 }
 
-echo "<br>".$season." @ ".$type."<br>";
-
-for ($i = 0; $i < 6; $i++) {
-    echo $json_a[$i]["season"]." | ".$json_a[$i]["type"]." | ".$json_a[$i]["holder"];
-    if ($json_a[$i]["season"] == $season && $json_a[$i]["type"] == $type) {
-        $original_holder = $json_a[$i]["holder"];
+foreach ($json_a as $key => $row) {
+    if ($row['season'] == $season && $row['type'] == $type) {
+        $original_holder = $json_a[$key]["holder"];
         break;
     }
 }
-
-
-
-
-echo "<br>".$original_holder;
 
 $holder = $original_holder;
 
@@ -94,20 +79,55 @@ if ($titlegames[$cont - 1][3] > $titlegames[$cont - 1][5]) {
 
 $string = file_get_contents("res/teamstreaks.json");
 $json_b = json_decode($string, true);
-for ($i = 0; $i < 1; $i++) {
-    if ($json_b[$i]["id"] == $teams[$champ]) {
-        $current_streak = $json_b[$i]["current_streak"];
-        $season_streak = $json_b[$i]["season_streak"];
-        $alltime_streak = $json_b[$i]["alltime_streak"];
-        $wins = $json_b[$i]["wins"];
-        $losses = $json_b[$i]["losses"];
+
+// CURRENT HOLDER STATS
+foreach($json_b as $key => $row) {
+    if ($row["id"] == $teams[$champ]) {
+        $current_streak = $json_b[$key]["current_streak"];
+        $season_streak = $json_b[$key]["season_streak"];
+        $alltime_streak = $json_b[$key]["alltime_streak"];
+        $wins = $json_b[$key]["wins_season"];
+        $losses = $json_b[$key]["losses_season"];
         $total_games = $wins + $losses;
         if ($total_games == 0) {
             $per = 0;
         } else {
             $per = ($wins * 100) / $total_games;
+            $per = substr($per, 0, 5);
         }
         break;
+    }
+}
+
+// SEASON STATS
+$best_season_streak = 0;
+$best_season_streak_team = array();
+$title_games_season = 0;
+$most_wins_season = 0;
+$most_wins_seaosn_team = 0;
+
+foreach($json_b as $key => $row) {
+    if ($json_b[$key]["season_streak"] > $best_season_streak) {
+        $best_season_streak = $json_b[$key]["season_streak"];
+        $best_season_streak_team = array();
+        $best_season_streak_team[] = $json_b[$key]["id"];
+    } else if ($json_b[$key]["season_streak"] == $best_season_streak) {
+        $best_season_streak_team[] = $json_b[$key]["id"];
+    }
+    $most_wins_season = $json_b[$key]["wins_season"] > $most_wins_season ? $json_b[$key]["wins_season"] : $most_wins_season;
+}
+
+// ALLTIME STATS
+$best_alltime_streak = 0;
+$best_alltime_streak_team = array();
+
+foreach($json_b as $key => $row) {
+    if ($json_b[$key]["alltime_streak"] > $best_alltime_streak) {
+        $best_alltime_streak = $json_b[$key]["alltime_streak"];
+        $best_alltime_streak_team = array();
+        $best_alltime_streak_team[] = $json_b[$key]["id"];
+    } else if ($json_b[$key]["alltime_streak"] == $best_alltime_streak) {
+        $best_alltime_streak_team[] = $json_b[$key]["id"];
     }
 }
 
@@ -234,7 +254,7 @@ for ($i = 0; $i < 1; $i++) {
                     <h4>Win %: <?php echo $per; ?></h4>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/logos/gsw.png" alt="">
+                    <img class="img-responsive" src="img/logos/GSW.png" alt="">
                 </div>
             </div>
 
@@ -351,11 +371,21 @@ for ($i = 0; $i < 1; $i++) {
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">2014/15 Season Stats</h2>
+                    <h4>Longest Streak: <?php echo $best_season_streak; ?> 
+                    <?php for ($i = 0; $i < count($best_season_streak_team); $i++)
+                            echo "<img class='small-logo' src='http://i.cdn.turner.com/nba/nba/.element/img/1.0/logos/teamlogos_80x64/".$best_season_streak_team[$i].".gif'>";
+                    ?>
+                    </h4>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">All Time Stats</h2>
+                    <h4>Longest Streak: <?php echo $best_alltime_streak; ?> 
+                    <?php for ($i = 0; $i < count($best_alltime_streak_team); $i++)
+                            echo "<img class='small-logo' src='http://i.cdn.turner.com/nba/nba/.element/img/1.0/logos/teamlogos_80x64/".$best_alltime_streak_team[$i].".gif'>";
+                    ?>
+                    </h4>
                 </div>
             </div>
 
