@@ -340,6 +340,27 @@ foreach($json_b as $key => $row) {
         <div class="container">
 
             <div class="row">
+                <?php 
+                foreach ($json_b as $key => $row) { ?>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                    <img class="img-responsive" src="img/logos/<?php echo $json_b[$key]['id'] ?>.png" alt="">
+                </div>
+                <?php
+                }
+                ?>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
