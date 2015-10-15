@@ -319,7 +319,7 @@ foreach($json_b as $key => $row) {
                                 <td><?php echo $titlegames[$cont - $i - 1][5]?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][2]." (".$teams[$titlegames[$cont - $i - 1][2]].")"?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][3]?></td>
-                                <td><?php echo "<img class='small-logo' src='http://i.cdn.turner.com/nba/nba/.element/img/1.0/logos/teamlogos_80x64/".$teams[$holder].".gif'>".$holder ?></td>
+                                <td><?php echo "<img class='small-logo' src='img/logos/mini/".$teams[$holder].".gif'>".$holder ?></td>
                                 <td><?php echo $streak ?></td>
                             </tr>
                             <?php
@@ -343,7 +343,7 @@ foreach($json_b as $key => $row) {
                 <?php 
                 foreach ($json_b as $key => $row) { ?>
                 <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
-                    <img class="img-responsive" src="img/logos/<?php echo $json_b[$key]['id'] ?>.png" alt="">
+                    <img class="img-responsive" src="img/logos/mini/<?php echo $json_b[$key]['id'] ?>.png" alt="">
                 </div>
                 <?php
                 }
