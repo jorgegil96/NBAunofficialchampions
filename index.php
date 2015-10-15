@@ -129,11 +129,11 @@ $cont = 0;
 								<tr>
 									<th><?php echo $cont;?></th>
 									<td><?php echo $line[0]?></td>
-									<td><?php echo $line[4]." (".$teams[$line[4]].")"?></td>
+									<td><?php echo "<img class='small-logo' src='img/logos/mini/".$teams[$line[4]].".gif'> ".$line[4]; ?></td>
 									<td><?php echo $line[5]?></td>
-									<td><?php echo $line[2]." (".$teams[$line[2]].")"?></td>
+									<td><?php echo "<img class='small-logo' src='img/logos/mini/".$teams[$line[2]].".gif'> ".$line[2]; ?></td>
 									<td><?php echo $line[3]?></td>
-									<td><?php echo $holder?></td>
+									<td><?php echo "<img class='small-logo' src='img/logos/mini/".$teams[$holder].".gif'> ".$holder?></td>
 									<td><?php echo $streak?></td>
 								</tr>
 								<?php
