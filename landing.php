@@ -184,7 +184,7 @@ foreach($json_b as $key => $row) {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="gamelog.php">Game Log</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>
@@ -319,7 +319,7 @@ foreach($json_b as $key => $row) {
                                 <td><?php echo $titlegames[$cont - $i - 1][5]?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][2]." (".$teams[$titlegames[$cont - $i - 1][2]].")"?></td>
                                 <td><?php echo $titlegames[$cont - $i - 1][3]?></td>
-                                <td><?php echo "<img class='small-logo' src='img/logos/mini/".$teams[$holder].".gif'>".$holder ?></td>
+                                <td><?php echo "<img class='small-logo' src='img/logos/icons/".$teams[$holder].".png'>".$holder ?></td>
                                 <td><?php echo $streak ?></td>
                             </tr>
                             <?php
@@ -340,14 +340,18 @@ foreach($json_b as $key => $row) {
         <div class="container">
 
             <div class="row">
-                <?php 
-                foreach ($json_b as $key => $row) { ?>
-                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
-                    <img class="img-responsive" src="img/logos/mini/<?php echo $json_b[$key]['id'] ?>.png" alt="">
+                <div class="col-md-6">
+                    <?php 
+                    foreach ($json_b as $key => $row) { $lim++; if ($lim > 30) break;?>
+                    <div class="col-lg-2 col-md-4 col-sm-2 col-xs-4" style="margin-bottom: 10px;">
+                        <img class="img-responsive" src="img/logos/icons/<?php echo $json_b[$key]['id'] ?>.png" alt="">
+                    </div>
+                    <?php
+                    }
+                    ?>
                 </div>
-                <?php
-                }
-                ?>
+                <div class="col-md-6">
+                </div>
             </div>
 
         </div>
@@ -457,7 +461,7 @@ foreach($json_b as $key => $row) {
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="gamelog.php">Game Log</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
