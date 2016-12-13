@@ -3,7 +3,7 @@ include ("res/TeamNames.php");
 $string = file_get_contents("res/season-holders.json");
 $json_a = json_decode($string, true);
 
-$season = 2015;
+$season = 2016;
 if (file_exists("data/leagues_NBA_".$season."_games_games_playoffs.csv")) {
     $playoffs_file = "data/leagues_NBA_".$season."_games_games_playoffs.csv";
     $playoffs_games = file($playoffs_file, FILE_SKIP_EMPTY_LINES);
